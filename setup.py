@@ -3,8 +3,8 @@ from setuptools import setup
 setup(
     name='airflow-providers-clickhouse',
     version='0.0.1',
-    url='https://just.temp.string',
-    license='GNU',
+    url='https://github.com/klimenkoIv/apache-airflow-providers-clickhouse',
+    license='Apache License 2.0',
     author='klimenko.iv',
     author_email='klimenko.iv@gmail.com',
     description='Apache Airflow providers for Yandex Clickhouse Database',
