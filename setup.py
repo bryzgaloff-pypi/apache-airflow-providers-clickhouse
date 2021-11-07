@@ -1,4 +1,7 @@
-from setuptools import setup
+﻿from setuptools import setup
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setup(
     name='airflow-providers-clickhouse',
@@ -8,6 +11,8 @@ setup(
     author='klimenko.iv',
     author_email='klimenko.iv@gmail.com',
     description='Apache Airflow providers for Yandex Clickhouse Database',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     entry_points={
         "apache_airflow_provider": [
             "provider_info=apache.__init__:get_provider_info"
