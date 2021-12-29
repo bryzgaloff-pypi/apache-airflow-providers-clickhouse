@@ -13,9 +13,9 @@ def get_provider_info():
         "integrations":            [
             {
                 "integration-name": "Clickhouse",
-                "external-doc-url": "https://osample.link.com",
+                "external-doc-url": "https://github.com/klimenkoIv/apache-airflow-providers-clickhouse",
                 "tags":             [
-                    "service", "clickhouse","database","airflow"
+                    "service", "clickhouse", "database", "airflow"
                 ]
             }
         ],
