@@ -1,6 +1,6 @@
 # apache-airflow-providers-clickhouse
 
-Provider allow to connect Apache Airflow to Yandex Clickhouse Database and perform query using ClickhouseOperator.
+Provider allow connection from Apache Airflow to Yandex Clickhouse Database and perform query using ClickhouseOperator.
 
 ## Installation
 
@@ -43,7 +43,7 @@ with DAG(
         click_conn_id='my_clickhouse_connection',
         do_xcom_push=False
     )
-    # set sql directli in the code section
+    # set sql direct in the code section
     select_push = ClickhouseOperator(
         task_id='select_xcom',
         sql='select * from TestTable;;',
@@ -55,7 +55,7 @@ with DAG(
 
 ## Get result of query
 
-If property *do_xcom_push* equals _False_, no result pushed to XCom. Otherwise result will be pushed to XCom.
+If property *do_xcom_push* equals _False_, no result pushed to XCom. Otherwise, result will be pushed to XCom.
 
 ## Additional
 
