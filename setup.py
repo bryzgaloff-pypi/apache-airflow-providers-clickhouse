@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='airflow-providers-clickhouse',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/klimenkoIv/apache-airflow-providers-clickhouse',
     project_urls={
         "Bug Tracker": "https://github.com/klimenkoIv/apache-airflow-providers-clickhouse/issues",

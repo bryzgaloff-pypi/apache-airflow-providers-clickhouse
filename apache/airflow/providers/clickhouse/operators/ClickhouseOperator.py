@@ -1,3 +1,8 @@
+"""
+ClicHouseOperator provide Airflow operator execute query on Clickhouse instance
+@author = klimenko.iv@gmail.com
+
+"""
 from typing import Iterable, List, Mapping, Optional, Union
 
 from airflow.models import BaseOperator
@@ -7,14 +12,17 @@ from apache.airflow.providers.clickhouse.hooks.ClickhouseHook import ClickhouseH
 
 
 class ClickhouseOperator(BaseOperator):
+    """
+
+    """
     template_fields = ('sql',)
     template_ext = ('.sql',)
 
     parameters = {
-        "use_numpy": False,
-        "client_name":"airflow-providers-clickhouse",
-        "strings_encoding":"utf-8",
-        "strings_as_bytes":True
+        "use_numpy":        False,
+        "client_name":      "airflow-providers-clickhouse",
+        "strings_encoding": "utf-8",
+        "strings_as_bytes": True
     }
 
     def __init__(
