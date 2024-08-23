@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='airflow-providers-clickhouse',
-    version='0.0.2',
+    version='0.0.3',
     url='https://github.com/klimenkoIv/apache-airflow-providers-clickhouse',
     project_urls={
         "Bug Tracker": "https://github.com/klimenkoIv/apache-airflow-providers-clickhouse/issues",
@@ -22,7 +22,7 @@ setup(
     long_description_content_type="text/markdown",
     entry_points={
         "apache_airflow_provider": [
-            "provider_info=apache.__init__:get_provider_info"
+            "provider_info=apache.airflow.providers.clickhouse.__init__:get_provider_info"
         ]
     },
     packages=['apache',
