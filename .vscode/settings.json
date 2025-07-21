@@ -1,0 +1,3 @@
+{
+    "ruff.configuration": "${workspaceFolder}/.vscode/pyproject.toml"
+}

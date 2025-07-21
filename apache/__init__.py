@@ -1,44 +1,37 @@
-
 def get_provider_info():
     return {
-        "package-name":            "airflow-providers-clickhouse",
-        "name":                    "Clickhouse",
-        "description":             "Clickhouse provider for Airflow",
-        "versions":                [
-            "0.0.1"
-        ],
+        "package-name": "airflow-providers-clickhouse-fork",
+        "name": "Clickhouse",
+        "description": "Clickhouse provider for Airflow",
+        "versions": ["0.0.1"],
         "additional-dependencies": [
-            "apache-airflow>=2.2.0", "clickhouse_driver>=0.2.1", "pandas>=1.3.2"
+            "apache-airflow>=2.2.0",
+            "clickhouse_driver>=0.2.1",
+            "pandas>=1.3.2",
         ],
-        "integrations":            [
+        "integrations": [
             {
                 "integration-name": "Clickhouse",
-                "external-doc-url": "https://github.com/klimenkoIv/apache-airflow-providers-clickhouse",
-                "tags":             [
-                    "service", "clickhouse", "database", "airflow"
-                ]
-            }
+                "external-doc-url": "https://github.com/0xMihalich/apache-airflow-providers-clickhouse",
+                "tags": ["service", "clickhouse", "database", "airflow"],
+            },
         ],
-        "operators":               [
+        "operators": [
             {
                 "integration-name": "Clickhouse",
-                "python-modules":   [
-                    "apache.airflow.providers.clickhouse.operators.ClickhouseOperator"
-                ]
-            }
+                "python-modules": ["apache.airflow.providers.clickhouse.operators.ClickhouseOperator"],
+            },
         ],
-        "hooks":                   [
+        "hooks": [
             {
                 "integration-name": "Clickhouse",
-                "python-modules":   [
-                    "apache.airflow.providers.clickhouse.hooks.ClickhouseHook"
-                ]
-            }
+                "python-modules": ["apache.airflow.providers.clickhouse.hooks.ClickhouseHook"],
+            },
         ],
-        "connection-types":        [
+        "connection-types": [
             {
                 "hook-class-name": "apache.airflow.providers.clickhouse.hooks.ClickhouseHook.ClickhouseHook",
-                "connection-type": "clickhouse"
-            }
-        ]
+                "connection-type": "clickhouse",
+            },
+        ],
     }

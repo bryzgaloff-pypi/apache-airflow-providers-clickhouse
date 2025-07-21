@@ -1,11 +1,11 @@
-# apache-airflow-providers-clickhouse
+# apache-airflow-providers-clickhouse-fork
 
 Provider allow connection from Apache Airflow to Yandex Clickhouse Database and perform query using ClickhouseOperator.
 
 ## Installation
 
 ```shell
-pip install airflow-providers-clickhouse
+pip install airflow-providers-clickhouse-fork
 ```
 
 ## Using
